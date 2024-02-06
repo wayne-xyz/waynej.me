@@ -2,6 +2,7 @@
 import Profile from "./profile";
 import Cardlist from "./cardlist";
 
+// home page 
 export default function Home() {
   return (
     

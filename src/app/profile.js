@@ -4,6 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa6";
 
+// this is main part of my info
 const Profile = () => {
     return (
         <div className="md:flex p-10  max-w-4xl place-items-center">
