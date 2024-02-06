@@ -5,12 +5,12 @@ import Cardlist from "./cardlist";
 export default function Home() {
   return (
     
-    <div className="grid place-content-center">
-      <main>
-        <div id="profile" className="parent flex">
+    <div className="grid place-content-center ">
+      <main className=" ">
+        <div id="profile" className=" flex place-content-center ">
           <Profile/>
         </div>
-        <div id="cardlist">
+        <div id="cardlist" className="flex">
           <Cardlist/>
         </div>
       </main> 

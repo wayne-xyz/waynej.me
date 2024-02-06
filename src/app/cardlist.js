@@ -8,20 +8,35 @@ const Cardlist = () => {
             <div>
                 Projects
             </div>
-            <div className="grid">
-                <ul>
-                    <li>
-                        <Card imageSrc="https://example.com/image.jpg"
+            <div className="flex ">
+                <ul className="flex ">
+                    <li  >
+                        <Card imageSrc="https://mui.com/static/images/cards/paella.jpg"
+                            textLabel="Example Label thi is a card label"
+                            timeLabel="3 hours ago"/>
+                    </li>
+                    <li >
+                        <Card imageSrc="https://mui.com/static/images/cards/paella.jpg"
                             textLabel="Example Label thi is a card label"
                             timeLabel="3 hours ago"></Card>
                     </li>
                     <li>
-                        <Card imageSrc="https://example.com/image.jpg"
+                        <Card imageSrc="https://mui.com/static/images/cards/paella.jpg"
                             textLabel="Example Label thi is a card label"
                             timeLabel="3 hours ago"></Card>
                     </li>
                     <li>
-                        <Card imageSrc="https://example.com/image.jpg"
+                        <Card imageSrc="https://mui.com/static/images/cards/paella.jpg"
+                            textLabel="Example Label thi is a card label"
+                            timeLabel="3 hours ago"></Card>
+                    </li>
+                    <li>
+                        <Card imageSrc="https://mui.com/static/images/cards/paella.jpg"
+                            textLabel="Example Label thi is a card label"
+                            timeLabel="3 hours ago"></Card>
+                    </li>
+                    <li>
+                        <Card imageSrc="https://mui.com/static/images/cards/paella.jpg"
                             textLabel="Example Label thi is a card label"
                             timeLabel="3 hours ago"></Card>
                     </li>

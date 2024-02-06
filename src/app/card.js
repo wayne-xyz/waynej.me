@@ -1,14 +1,14 @@
 import React from "react";
 
-const Card = (imageSrc,textLabel,timeLabel) => {
+const Card = (props) => {
     return (
-        <div class="bg-slate-100 rounded-xl p-8 dark:bg-slate-800">
-        <img className="w-full" src={imageSrc} alt="Card" />
-        <div className="px-6 py-4">
-          <div className=" text-lg font-medium mb-2">{textLabel}</div>
-          <p className="text-gray-700 text-base">{timeLabel}</p>
+        <div className="bg-slate-100 rounded-xl p-6 dark:bg-slate-800 m-2">
+            <img className="w-full" src={props.imageSrc} alt="Card" />
+            <div className=" py-4">
+                <div className=" text-lg font-medium mb-2">{props.textLabel}</div>
+                <p className="text-gray-700 text-base">{props.timeLabel}</p>
+            </div>
         </div>
-      </div>
     );
 }
 
