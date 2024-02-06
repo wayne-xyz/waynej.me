@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import Profile from "./profile";
 import Cardlist from "./cardlist";
 
@@ -10,7 +10,7 @@ export default function Home() {
         <div id="profile" className=" flex place-content-center ">
           <Profile/>
         </div>
-        <div id="cardlist" className="flex max-w-4xl">
+        <div id="cardlist" className="flex max-w-4xl place-content-center">
           <Cardlist/>
         </div>
       </main> 

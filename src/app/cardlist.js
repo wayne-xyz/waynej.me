@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import Card from "./card";
 
 const Cardlist = () => {
@@ -12,34 +11,23 @@ const Cardlist = () => {
                 <ul className="flex justify-center flex-wrap ">
                     <li  className="">
                         <Card imageSrc="https://raw.githubusercontent.com/livingspring/Voice-Translator/master/animation1.gif"
-                            textLabel="Example Label thi is a card label here is a bout the swift python xtts"
-                            timeLabel="3 hours ago"/>
+                            textLabel="Voice-Translator"
+                            timeLabel="Dec 2023 Completed"
+                            githubLink="https://github.com/livingspring/Voice-Translator"
+                            />
                     </li>
                     <li >
                         <Card imageSrc="https://mui.com/static/images/cards/paella.jpg"
-                            textLabel="Example Label thi is a card label"
+                            textLabel="Incoming"
                             timeLabel="3 hours ago"></Card>
                     </li>
-                    <li>
+                    <li >
                         <Card imageSrc="https://mui.com/static/images/cards/paella.jpg"
-                            textLabel="Example Label thi is a card label"
+                            textLabel="Incoming"
                             timeLabel="3 hours ago"></Card>
                     </li>
-                    <li>
-                        <Card imageSrc="https://mui.com/static/images/cards/paella.jpg"
-                            textLabel="Example Label thi is a card label"
-                            timeLabel="3 hours ago"></Card>
-                    </li>
-                    <li>
-                        <Card imageSrc="https://mui.com/static/images/cards/paella.jpg"
-                            textLabel="Example Label thi is a card label"
-                            timeLabel="3 hours ago"></Card>
-                    </li>
-                    <li>
-                        <Card imageSrc="https://mui.com/static/images/cards/paella.jpg"
-                            textLabel="Example Label thi is a card label"
-                            timeLabel="3 hours ago"></Card>
-                    </li>
+                 
+                 
                 </ul>
             </div>
         </div>

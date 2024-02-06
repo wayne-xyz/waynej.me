@@ -3,7 +3,6 @@ import Image from "next/image";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa6";
-import Cardlist from "./cardlist";
 
 const Profile = () => {
     return (
@@ -19,10 +18,15 @@ const Profile = () => {
                 <h3 className="flex">Hi, I'm Wayne, a Full-Stack Software Engineer. Currently pursuing my Master's degree in Computer Science at SMU Dallas, I specialize in developing web, mobile and GIS applications, focusing on creating seamless user experiences. I'm also exploring the fascinating realm of machine learning. </h3>
                 <ul className="flex space-x-4">
                     <li>
-                        <FaGithub></FaGithub>
+                        <a href="https://github.com/livingspring" className="">
+                            <FaGithub></FaGithub></a>
                     </li>
-                    <li><FaLinkedin></FaLinkedin></li>
-                    <li><FaEnvelope /></li>
+                    <li><a href="https://www.linkedin.com/in/rongweiji/">
+                        <FaLinkedin></FaLinkedin></a>
+                    </li>
+                    <a href="mailto:rji@smu.edu">
+                        <li><FaEnvelope /></li>
+                    </a>
                 </ul>
             </div>
         </div>
