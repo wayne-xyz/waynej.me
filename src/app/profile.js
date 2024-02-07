@@ -16,10 +16,10 @@ const Profile = () => {
             />
             <div className="font-medium p-8 ">
                 <h1 id="name" className="text-lg font-large">Wayne J</h1>
-                <h3 className="flex">Hi, I'm Wayne, a Full-Stack Software Engineer. Currently pursuing my Master's degree in Computer Science at SMU Dallas, I specialize in developing web, mobile and GIS applications, focusing on creating seamless user experiences. I'm also exploring the fascinating realm of machine learning. </h3>
+                <h3 className="flex">Hi, I&apos;m Wayne, a Full-Stack Software Engineer. Currently pursuing my Master&apos;s degree in Computer Science at SMU Dallas, I specialize in developing web, mobile and GIS applications, focusing on creating seamless user experiences. I&apos;m also exploring the fascinating realm of machine learning. </h3>
                 <ul className="flex space-x-4">
                     <li>
-                        <a href="https://github.com/livingspring" className="">
+                        <a href="https://github.com/livingspring" >
                             <FaGithub></FaGithub></a>
                     </li>
                     <li><a href="https://www.linkedin.com/in/rongweiji/">
