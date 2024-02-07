@@ -9,7 +9,7 @@ const Profile = () => {
     return (
         <div className="md:flex p-10  max-w-4xl place-items-center">
             <Image className="rounded-full w-auto  md:h-auto"
-                src="/../photo.jpg"
+                src="/photo.jpg"
                 width={150}
                 height={150}
                 alt="Picture of the author"
