@@ -1,12 +1,14 @@
 
 import Profile from "./profile";
 import Cardlist from "./cardlist";
-import Head from "next/head";
+import Backgournd from "./background";
+
 
 // home page 
 export default function Home() {
   return (
       <div className="md:grid place-content-center ">
+        <Backgournd/>
         <main className=" ">
           <div id="profile" className=" flex place-content-center ">
             <Profile />
