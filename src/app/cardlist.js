@@ -26,7 +26,16 @@ const Cardlist = () => {
                             textLabel="Incoming"
                             timeLabel="3 hours ago"></Card>
                     </li>
-                 
+                    <li >
+                        <Card imageSrc="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg"
+                            textLabel="Incoming"
+                            timeLabel="3 hours ago"></Card>
+                    </li>
+                    <li >
+                        <Card imageSrc="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg"
+                            textLabel="Incoming"
+                            timeLabel="3 hours ago"></Card>
+                    </li>
                  
                 </ul>
             </div>
