@@ -8,10 +8,10 @@ const Card = (props) => {
             <div className=" py-4">
                 <a href={props.githubLink}>
                 <div className=" text-lg font-medium mb-2">{props.textLabel}</div></a>
-                <p className="text-slate-300 text-base">{props.timeLabel}</p>
+                <p className="text-slate-500 dark:text-slate-300 text-base">{props.timeLabel}</p>
             </div>
         </div>
     );
-}
+} 
 
 export default Card;
