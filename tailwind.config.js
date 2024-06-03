@@ -16,9 +16,9 @@ module.exports = {
         "darkbg-blue-100": "#141E30",
         "darkbg-blue-200": "#203A43",
         "darkbg-blue-300": "#243B55",
-        "lightbg-blue-100": "#2E86AB",
-        "lightbg-blue-200": "#4FACD7",
-        
+        "lightbg-blue-100": "#1c92d2",
+        "lightbg-blue-200": "#C9D6FF",
+        "lightbg-blue-300": "#ECFDED",
       }
     },
 
