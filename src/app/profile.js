@@ -1,8 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { FaEnvelope } from "react-icons/fa6";
+
+import { GithubIcon, Linkedin, Mail } from "lucide-react";
 
 // this is main part of my info
 const Profile = () => {
@@ -19,15 +18,20 @@ const Profile = () => {
                 <h3 className="flex">Hi, I&apos;m Wayne, a Full-Stack Software Engineer. Currently pursuing my Master&apos;s degree in Computer Science at SMU Dallas, I specialize in developing web, mobile and GIS applications, focusing on creating seamless user experiences. I&apos;m also exploring the fascinating realm of machine learning. </h3>
                 <ul className="flex space-x-4">
                     <li>
-                        <a href="https://github.com/livingspring" >
-                            <FaGithub></FaGithub></a>
+                        <a href="https://github.com/wayne-xyz">
+                            <GithubIcon className="w-6 h-6 m-1" />
+                        </a>
                     </li>
-                    <li><a href="https://www.linkedin.com/in/rongweiji/">
-                        <FaLinkedin></FaLinkedin></a>
+                    <li>
+                        <a href="https://www.linkedin.com/in/wayneji/">
+                            <Linkedin className="w-6 h-6 m-1" />
+                        </a>
                     </li>
-                    <a href="mailto:rji@smu.edu">
-                        <li><FaEnvelope /></li>
-                    </a>
+                    <li>
+                        <a href="mailto:rji@smu.edu">
+                            <Mail className="w-6 h-6 m-1" />
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
