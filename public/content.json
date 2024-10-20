@@ -1,0 +1,49 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "type": "blog",
+        "title": "My Latest Blog Post",
+        "date": "2023-06-01",
+        "description": "This is a sample blog post.",
+        "url": "/blog/latest-post",
+        "image": "/placeholder-image.jpg"
+      },
+      {
+        "id": 2,
+        "type": "project",
+        "title": "Awesome Project",
+        "date": "2023-05-15",
+        "description": "This is a sample project.",
+        "url": "/projects/awesome-project",
+        "image": "/placeholder-image.jpg"
+      },
+      {
+        "id": 3,
+        "type": "publication",
+        "title": "Research Paper",
+        "date": "2023-04-20",
+        "description": "This is a sample publication.",
+        "url": "/publications/research-paper",
+        "image": "/placeholder-image.jpg"
+      },
+      {
+        "id": 4,
+        "type": "video",
+        "title": "New Tutorial: React Hooks",
+        "date": "2023-06-05",
+        "description": "Learn about React Hooks in this tutorial.",
+        "url": "https://youtube.com/watch?v=your-video-id",
+        "image": "/placeholder-image.jpg"
+      },
+      {
+        "id": 5,
+        "type": "event",
+        "title": "Speaking at Tech Conference",
+        "date": "2023-07-10",
+        "description": "This is a sample event.",
+        "url": "/events/tech-conference",
+        "image": "/placeholder-image.jpg"
+      }
+    ]
+  }
