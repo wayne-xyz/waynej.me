@@ -3,67 +3,72 @@
       {
         "id": 1,
         "type": "blog",
-        "title": "My Latest Blog Post",
-        "date": "2023-06-01",
-        "description": "This is a sample blog post.",
+        "title": "Exporting Map’s Jpeg file Methods",
+        "date": "2024-03-02",
+        "description": "In this blog, I share my experience of exporting over 1,000 map images as JPEGs and TIFFs. I compare various methods, including Google Earth Engine, Geemap, and ArcGIS Pro with ArcPy, and explain how I chose the most efficient approach for automated, high-quality image exports.",
         "urls": {
-          "post": "/blog/latest-post",
-          "github": "https://github.com/yourusername/blog-post-repo",
-          "demo": "https://demo.example.com/latest-post"
+          "Medium": "https://medium.com/@wayenj/exporting-maps-jpeg-file-methods-1ec9027ab8ac"
         },
-        "image": "/placeholder-image.jpg"
+        "image": "/1.png"
       },
       {
         "id": 2,
         "type": "project",
-        "title": "Awesome Project",
-        "date": "2023-05-15",
-        "description": "This is a sample project.",
+        "title": "RA Project: Satellite Image Collection",
+        "date": "2024-10-15",
+        "description": "Collecting the satellite images from the Google Earth Engine, and save them to the Google Drive and make file be searchable and accessible by using Google Cloud App Engine, Flask, ArcGIS SDK, for Model training preprocessing.",
         "urls": {
-          "project": "/projects/awesome-project",
-          "github": "https://github.com/yourusername/awesome-project",
-          "live": "https://awesome-project.example.com"
+          "Github": "https://github.com/wayne-xyz/DPportal",
+          "Website": "https://https://areas-degradadas-peru.com/"
         },
-        "image": "/placeholder-image.jpg"
+        "image": "/2.png"
       },
       {
         "id": 3,
         "type": "publication",
-        "title": "Research Paper",
-        "date": "2023-04-20",
-        "description": "This is a sample publication.",
+        "title": "Research Paper: Advanced Multimodal Deep Learning Architecture for Image-Text Matching",
+        "date": "2024-04-20",
+        "description": "This is a sample publication. Pending to be published.",
         "urls": {
-          "paper": "/publications/research-paper",
-          "doi": "https://doi.org/10.1234/example.5678",
-          "preprint": "https://arxiv.org/abs/1234.56789"
+          "Google Scholar": "https://scholar.google.com/"
         },
         "image": "/placeholder-image.jpg"
       },
       {
         "id": 4,
         "type": "video",
-        "title": "New Tutorial: React Hooks",
-        "date": "2023-06-05",
-        "description": "Learn about React Hooks in this tutorial.",
+        "title": "ArcGIS Map SDK Swift Setup: API Key, Licenses & iOS Dev Guide",
+        "date": "2024-10-04",
+        "description": "Video: ArcGIS Map SDK Swift Setup: API Key, Licenses & iOS Dev Guide. How to create api and license for ArcGIS Map SDK Swift.",
         "urls": {
-          "youtube": "https://youtube.com/watch?v=your-video-id",
-          "transcript": "/tutorials/react-hooks-transcript",
-          "code": "https://github.com/yourusername/react-hooks-tutorial"
+          "youtube": "https://www.youtube.com/watch?v=V4S5mbcrhXs&ab_channel=WayneJ."
         },
-        "image": "/placeholder-image.jpg"
+        "image": "/4.png"
+      },
+      {
+        "id": 2,
+        "type": "project",
+        "title": "Hackathon Project: Visign",
+        "date": "2024-03-15",
+        "description": "ViSign detects and translates sign language gestures into semantically accurate sentences using Mediapipi for hand and body behavior detection, TensorFlow for word translation, Google's Gemini for sentence generation, and is deployed on Vercel with Flask as the model backend.",
+        "urls": {
+          "Github": "https://github.com/AshokSaravanan222/LAHacks24",
+          "devpost": "https://devpost.com/software/visign-u70rws"
+        },
+        "image": "/5.png"
       },
       {
         "id": 5,
         "type": "event",
-        "title": "Speaking at Tech Conference",
-        "date": "2023-07-10",
-        "description": "This is a sample event.",
+        "title": "Volunteer at Esri Dev Summit 2024",
+        "date": "2024-05-10",
+        "description": "Volunteer at Esri Dev Summit 2024, and help the attendees",
         "urls": {
-          "event": "/events/tech-conference",
-          "slides": "https://slideshare.net/yourusername/tech-conference-slides",
-          "registration": "https://techconference.com/register"
+          "event": "https://mediaspace.esri.com/channel/2024+Esri+Developer+Summit/325483122",
+          "Linkedin": "https://www.linkedin.com/posts/esri_recruiting-season-is-coming-there-are-4-activity-7235255732294537216-deyM/?utm_source=share&utm_medium=member_desktop"
+
         },
-        "image": "/placeholder-image.jpg"
+        "image": "/6.jpeg"
       }
     ]
   }
