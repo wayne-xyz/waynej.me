@@ -6,7 +6,7 @@ waynej.me
 ## Tools
 
 [Lucide](https://lucide.dev/)
-https://ui.shadcn.com/
+[shadcn](https://ui.shadcn.com/)
 
 ## Run the Next.js project
 

@@ -6,7 +6,11 @@
         "title": "My Latest Blog Post",
         "date": "2023-06-01",
         "description": "This is a sample blog post.",
-        "url": "/blog/latest-post",
+        "urls": {
+          "post": "/blog/latest-post",
+          "github": "https://github.com/yourusername/blog-post-repo",
+          "demo": "https://demo.example.com/latest-post"
+        },
         "image": "/placeholder-image.jpg"
       },
       {
@@ -15,7 +19,11 @@
         "title": "Awesome Project",
         "date": "2023-05-15",
         "description": "This is a sample project.",
-        "url": "/projects/awesome-project",
+        "urls": {
+          "project": "/projects/awesome-project",
+          "github": "https://github.com/yourusername/awesome-project",
+          "live": "https://awesome-project.example.com"
+        },
         "image": "/placeholder-image.jpg"
       },
       {
@@ -24,7 +32,11 @@
         "title": "Research Paper",
         "date": "2023-04-20",
         "description": "This is a sample publication.",
-        "url": "/publications/research-paper",
+        "urls": {
+          "paper": "/publications/research-paper",
+          "doi": "https://doi.org/10.1234/example.5678",
+          "preprint": "https://arxiv.org/abs/1234.56789"
+        },
         "image": "/placeholder-image.jpg"
       },
       {
@@ -33,7 +45,11 @@
         "title": "New Tutorial: React Hooks",
         "date": "2023-06-05",
         "description": "Learn about React Hooks in this tutorial.",
-        "url": "https://youtube.com/watch?v=your-video-id",
+        "urls": {
+          "youtube": "https://youtube.com/watch?v=your-video-id",
+          "transcript": "/tutorials/react-hooks-transcript",
+          "code": "https://github.com/yourusername/react-hooks-tutorial"
+        },
         "image": "/placeholder-image.jpg"
       },
       {
@@ -42,7 +58,11 @@
         "title": "Speaking at Tech Conference",
         "date": "2023-07-10",
         "description": "This is a sample event.",
-        "url": "/events/tech-conference",
+        "urls": {
+          "event": "/events/tech-conference",
+          "slides": "https://slideshare.net/yourusername/tech-conference-slides",
+          "registration": "https://techconference.com/register"
+        },
         "image": "/placeholder-image.jpg"
       }
     ]

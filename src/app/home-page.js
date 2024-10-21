@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { useRouter } from 'next/navigation'
 import Image from "next/image"
 import Link from "next/link"
 import { Github, Linkedin, Youtube, Moon, Sun, Mail } from "lucide-react"
@@ -10,7 +11,6 @@ import { useContent } from "@/hooks/useContent"
 import { devLog } from '@/utils/devLogger';
 
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
 import {
@@ -20,12 +20,17 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { ContentCard } from "@/components/ContentCard"
+import { ContentModal } from "@/components/ContentModal"
+import { loadPostDetails } from "@/utils/postLoader"
 
 const HomePage = () => {
   const [selectedTypes, setSelectedTypes] = useState([])
+  const [selectedPost, setSelectedPost] = useState(null)
+  const [isModalOpen, setIsModalOpen] = useState(false)
   const { setTheme, theme } = useTheme()
   const { profile, isLoading: profileLoading, error: profileError } = useProfile()
   const { content, isLoading: contentLoading, error: contentError } = useContent()
+  const router = useRouter()
 
   devLog('HomePage: profile', profile);
   devLog('HomePage: content', content);
@@ -56,6 +61,27 @@ const HomePage = () => {
   }
 
   const uniqueTypes = Array.from(new Set(content.posts.map(post => post.type)))
+
+  const handlePostClick = async (id) => {
+    devLog('Clicked post with id:', id);
+    try {
+      const postDetails = await loadPostDetails(id);
+      devLog('Loaded post details:', postDetails);
+      setSelectedPost(postDetails);
+      setIsModalOpen(true);
+      // Update the URL without triggering a navigation
+      window.history.pushState({}, '', `/post/${id}`);
+    } catch (error) {
+      devLog('Error loading post details:', error);
+    }
+  }
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedPost(null);
+    // Revert the URL to the home page
+    window.history.pushState({}, '', '/');
+  }
 
   return (
     <div className="container mx-auto p-4 space-y-8">
@@ -149,9 +175,18 @@ const HomePage = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {sortedContent.map(post => (
-          <ContentCard key={post.id} post={post} />
+          <ContentCard key={post.id} post={post} onClick={handlePostClick} />
         ))}
       </div>
+
+      <ContentModal 
+        isOpen={isModalOpen} 
+        onClose={() => {
+          setIsModalOpen(false);
+          router.push('/', undefined, { shallow: true });
+        }} 
+        post={selectedPost} 
+      />
     </div>
   )
 }
