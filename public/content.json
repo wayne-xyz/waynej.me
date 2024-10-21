@@ -19,7 +19,7 @@
         "description": "Collecting the satellite images from the Google Earth Engine, and save them to the Google Drive and make file be searchable and accessible by using Google Cloud App Engine, Flask, ArcGIS SDK, for Model training preprocessing.",
         "urls": {
           "Github": "https://github.com/wayne-xyz/DPportal",
-          "Website": "https://https://areas-degradadas-peru.com/"
+          "Website": "http://areas-degradadas-peru.com/"
         },
         "image": "/2.png"
       },
@@ -46,7 +46,7 @@
         "image": "/4.png"
       },
       {
-        "id": 2,
+        "id": 5,
         "type": "project",
         "title": "Hackathon Project: Visign",
         "date": "2024-03-15",
@@ -58,7 +58,7 @@
         "image": "/5.png"
       },
       {
-        "id": 5,
+        "id": 6,
         "type": "event",
         "title": "Volunteer at Esri Dev Summit 2024",
         "date": "2024-05-10",
