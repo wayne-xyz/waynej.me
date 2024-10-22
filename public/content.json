@@ -69,6 +69,17 @@
 
         },
         "image": "/6.jpeg"
+      },
+      {
+        "id": 7,
+        "type": "video",
+        "title": "DualSense Controller Exploring For Developer, Features, Capabilities, Usage Demo",
+        "date": "2024-10-4",
+        "description": "Introduction to DualSense Controller, Features, Capabilities, Usage Demo, based on the PS5 controller and the input and output features.",
+        "urls": {
+          "youtube": "https://youtu.be/BEubMgXUtQw?si=jghwOvNUG9tWgtbx"
+        },
+        "image": "/7.jpg"
       }
     ]
   }
