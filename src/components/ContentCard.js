@@ -15,8 +15,8 @@ export function ContentCard({ post, onClick }) {
         objectFit="cover"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-      <div className="relative z-10 flex flex-col h-full justify-between p-4">
-        <CardHeader className="p-0">
+      <div className="relative z-10 flex flex-col h-full justify-end p-4">
+        <CardHeader className="p-0 mb-2">
           <CardTitle className="text-white">{post.title}</CardTitle>
         </CardHeader>
         <CardFooter className="flex justify-between items-center p-0">
