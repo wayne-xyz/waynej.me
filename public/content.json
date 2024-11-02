@@ -80,6 +80,18 @@
           "youtube": "https://youtu.be/BEubMgXUtQw?si=jghwOvNUG9tWgtbx"
         },
         "image": "/7.jpg"
+      },
+    {
+        "id": 8,
+        "type": "blog",
+        "title": "Mapview to Image ArcGIS SDK for Swift",
+        "date": "2024-11-02",
+        "description": "The blog details the process of exporting an image from the MapView in the ArcGIS SDK for Swift, highlighting challenges with empty images and the solution involving a loading delay.",
+        "urls": {
+          "Medium": "https://medium.com/@wayenj/mapview-to-image-arcgis-sdk-for-swift-b6f46b72ad6a"
+        },
+        "image": "/8.png"
       }
+        
     ]
   }
