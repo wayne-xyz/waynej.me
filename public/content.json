@@ -91,6 +91,17 @@
           "Medium": "https://medium.com/@wayenj/mapview-to-image-arcgis-sdk-for-swift-b6f46b72ad6a"
         },
         "image": "/8.png"
+      },
+      {
+        "id": 9,
+        "type": "project",
+        "title": "MIRA - VisionPro APP: AI-Enhanced Conversation Assistance",
+        "date": "2024-11-18",
+        "description": "MIRA (Stanford Hackathon project)- VisionPro APP is an advanced AI-driven tool that integrates LLMs (Large Language Models) to enhance conversations by generating immersive 3D scenes based on discussion topics. It supports Text-to-Speech (TTS) and Speech-to-Text (STT) capabilities while delivering an engaging user experience through Swift and SwiftUI technologies.",
+        "urls": {
+          "GitHub": "https://github.com/wayne-xyz/MIRA"
+        },
+        "image": "/9.png"
       }
         
     ]
