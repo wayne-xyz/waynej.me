@@ -107,7 +107,7 @@
         "id": 10,
         "type": "project",
         "title": "GEEExpUI - Google Earth Engine Export Tif files to Google Drive",
-        "date": "2024-11-18",
+        "date": "2024-11-30",
         "description": "GEEExpUI is a user-friendly desktop application for exporting high-resolution TIFF files from Google Earth Engine to Google Drive",
         "urls": {
           "GitHub": "https://github.com/wayne-xyz/GEEExpUI",
