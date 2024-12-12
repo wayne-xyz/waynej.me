@@ -8,10 +8,10 @@ export function ContentModal({ isOpen, onClose, post }) {
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="sm:max-w-[1280px]   sm:h-[60vh] p-0 overflow-hidden">
+      <DialogContent className="sm:max-w-[1280px] max-h-[90vh] p-0 overflow-y-auto">
         <div className="flex flex-col sm:flex-row">
           {/* Left side - Image */}
-          <div className="sm:w-2/3 relative h-[300px] sm:h-auto">
+          <div className="sm:w-2/3 relative h-[300px] sm:h-[60vh]">
             <Image
               src={post.image || '/placeholder-image.jpg'}
               alt={post.title}
@@ -21,8 +21,8 @@ export function ContentModal({ isOpen, onClose, post }) {
           </div>
 
           {/* Right side - Content */}
-          <div className="sm:w-1/3 p-6 overflow-y-auto max-h-[80vh]">
-            <DialogHeader>
+          <div className="sm:w-1/3 p-6 overflow-y-auto">
+            <DialogHeader className="sticky top-0 bg-background z-10 pb-4">
               <DialogTitle className="text-2xl font-bold">{post.title}</DialogTitle>
               <p className="text-sm text-gray-500 dark:text-gray-400">
                 {new Date(post.date).toLocaleDateString()}
