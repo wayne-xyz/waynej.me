@@ -207,7 +207,7 @@ const HomePage = () => {
         <div className="space-y-4">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-4">
-              <h2 className="text-2xl font-bold">Portfolio & Content</h2>
+              <h2 className="text-2xl font-bold">Content</h2>
               <div className="space-x-2">
                 {uniqueTypes.map(type => (
                   <Badge
