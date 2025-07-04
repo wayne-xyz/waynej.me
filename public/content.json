@@ -114,6 +114,20 @@
           "Youtube":"https://youtu.be/_ddzpUMCEuw"
         },
         "image": "/10.jpg"
+      },
+      {
+        "id": 11,
+        "type": "Product",
+        "title": "LivCap - Privacy-First Live Caption App for macOS",
+        "date": "2024-12-20",
+        "description": "Privacy first - on-device live caption, no data collection. 1.7x word-level lead rate and 10% reduced latency compared with default macOS live caption. Open source and free to download through the App Store, and more features are coming soon.",
+        "urls": {
+          "Website": "https://livcap.app",
+          "AppStore": "Coming Soon",
+          "Youtube": "https://youtu.be/-fp2xLChtmE",
+          "Github": "https://github.com/wayne-xyz/LivCap"
+        },
+        "image": "/livcap.png"
       }
         
     ]
