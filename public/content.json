@@ -74,7 +74,7 @@
         "id": 7,
         "type": "video",
         "title": "DualSense Controller Exploring For Developer, Features, Capabilities, Usage Demo",
-        "date": "2024-10-4",
+        "date": "2024-10-04",
         "description": "Introduction to DualSense Controller, Features, Capabilities, Usage Demo, based on the PS5 controller and the input and output features.",
         "urls": {
           "Youtube": "https://youtu.be/BEubMgXUtQw?si=jghwOvNUG9tWgtbx"
@@ -119,7 +119,7 @@
         "id": 11,
         "type": "Product",
         "title": "LivCap - Privacy-First Live Caption App for macOS",
-        "date": "2025-6-20",
+        "date": "2025-06-20",
         "description": "Privacy first - on-device live caption, no data collection. 1.7x word-level lead rate and 10% reduced latency compared with default macOS live caption. Open source and free to download through the App Store, and more features are coming soon.",
         "urls": {
           "Website": "https://livcap.app",
@@ -133,7 +133,7 @@
       "id": 12,
         "type": "blog",
         "title": "Quick Findings: On-Device ASR Performance on macOS",
-        "date": "2025-6-30",
+        "date": "2025-06-30",
         "description": "Here's a rapid rundown of my experiment comparing five on-device ASR models. 2025 July",
            "urls": {
           "Medium": "https://medium.com/@wayenj/quick-findings-on-device-asr-performance-on-macos-34a8bc4847e2"
