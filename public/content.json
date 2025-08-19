@@ -131,7 +131,7 @@
       },
         {
       "id": 12,
-        "type": "Blog",
+        "type": "blog",
         "title": "Quick Findings: On-Device ASR Performance on macOS",
         "date": "2025-6-30",
         "description": "Here's a rapid rundown of my experiment comparing five on-device ASR models. 2025 July",

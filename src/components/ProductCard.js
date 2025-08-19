@@ -74,16 +74,17 @@ export function ProductCard({ post, onClick }) {
             )}
             
             {post.urls?.AppStore && (
-              <Button 
-                variant="outline" 
-                size="sm" 
-                className="flex items-center gap-1 sm:gap-2 opacity-50 cursor-not-allowed text-xs sm:text-sm"
-                disabled
-              >
-                <Store className="h-3 w-3 sm:h-4 sm:w-4" />
-                <span className="hidden sm:inline">App Store (Coming Soon)</span>
-                <span className="sm:hidden">App Store</span>
-              </Button>
+              <Link href="https://apps.apple.com/us/app/livcap/id6748108138?mt=12" target="_blank" rel="noopener noreferrer">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="flex items-center gap-1 sm:gap-2 text-xs sm:text-sm"
+                >
+                  <Store className="h-3 w-3 sm:h-4 sm:w-4" />
+                  <span className="hidden sm:inline">Available on Mac App Store</span>
+                  <span className="sm:hidden">Mac App Store</span>
+                </Button>
+              </Link>
             )}
             
             {post.urls?.Download && (
