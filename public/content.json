@@ -134,11 +134,22 @@
         "type": "Blog",
         "title": "Quick Findings: On-Device ASR Performance on macOS",
         "date": "2025-6-30",
-        "description": "Here’s a rapid rundown of my experiment comparing five on-device ASR models. 2025 July",
+        "description": "Here's a rapid rundown of my experiment comparing five on-device ASR models. 2025 July",
            "urls": {
           "Medium": "https://medium.com/@wayenj/quick-findings-on-device-asr-performance-on-macos-34a8bc4847e2"
         },
         "image":"/Screen Shot 2025-07-04 at 01.02.35 AM.png"
+      },
+      {
+        "id": 13,
+        "type": "project",
+        "title": "Dualsense-ALOHA: Controller Teleoperation for RL Training",
+        "date": "2025-1-15",
+        "description": "Dualsense Controller Teleoperation and ACT autonomy on ALOHA for Bigym benchmark tasks. This project integrates the DualSense controller with ALOHA teleoperation system to collect demonstration data for training reinforcement learning models in bimanual robotic manipulation tasks.",
+        "urls": {
+          "GitHub": "https://github.com/wayne-xyz/Dualsense-ALOHA"
+        },
+        "image": "https://github.com/wayne-xyz/Dualsense-ALOHA/raw/master/controllers/demo/closerdishwasher2.gif"
       }
         
     ]
