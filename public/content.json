@@ -147,7 +147,8 @@
         "date": "2025-1-15",
         "description": "Dualsense Controller Teleoperation and ACT autonomy on ALOHA for Bigym benchmark tasks. This project integrates the DualSense controller with ALOHA teleoperation system to collect demonstration data for training reinforcement learning models in bimanual robotic manipulation tasks.",
         "urls": {
-          "GitHub": "https://github.com/wayne-xyz/Dualsense-ALOHA"
+          "GitHub": "https://github.com/wayne-xyz/Dualsense-ALOHA",
+          "YouTube": "https://www.youtube.com/watch?v=-k_KTURPvFg&ab_channel=WayneJ."
         },
         "image": "https://github.com/wayne-xyz/Dualsense-ALOHA/raw/master/controllers/demo/closerdishwasher2.gif"
       }
