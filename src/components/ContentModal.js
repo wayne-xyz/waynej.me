@@ -10,14 +10,24 @@ export function ContentModal({ isOpen, onClose, post }) {
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="sm:max-w-[1280px] max-h-[90vh] p-0 overflow-y-auto">
         <div className="flex flex-col sm:flex-row">
-          {/* Left side - Image */}
+          {/* Left side - Image/GIF */}
           <div className="sm:w-2/3 relative h-[300px] sm:h-[60vh]">
-            <Image
-              src={post.image || '/placeholder-image.jpg'}
-              alt={post.title}
-              layout="fill"
-              objectFit="cover"
-            />
+            {post.gif ? (
+              <div className="h-full w-full">
+                <img
+                  src={post.gif}
+                  alt={`${post.title} demo`}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ) : (
+              <Image
+                src={post.image || '/placeholder-image.jpg'}
+                alt={post.title}
+                layout="fill"
+                objectFit="cover"
+              />
+            )}
           </div>
 
           {/* Right side - Content */}
@@ -32,6 +42,22 @@ export function ContentModal({ isOpen, onClose, post }) {
             <div className="mt-4">
               <p className="text-gray-700 dark:text-gray-300">{post.description}</p>
             </div>
+
+            {/* Show original image if GIF is displayed */}
+            {post.gif && post.image && (
+              <div className="mt-6">
+                <h3 className="text-lg font-semibold mb-2">Project Image:</h3>
+                <div className="relative h-40 w-full rounded-lg overflow-hidden">
+                  <Image
+                    src={post.image}
+                    alt={`${post.title} image`}
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded-lg"
+                  />
+                </div>
+              </div>
+            )}
 
             {post.urls && (
               <div className="mt-6">
