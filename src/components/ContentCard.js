@@ -9,11 +9,13 @@ export function ContentCard({ post, onClick }) {
       onClick={() => onClick(post.id)}
     >
       {post.gif ? (
-        <img
-          src={post.gif}
-          alt={post.title}
-          className="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
-        />
+        <div className="absolute inset-0">
+          <img
+            src={post.gif}
+            alt={post.title}
+            className="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+          />
+        </div>
       ) : (
         <Image
           src={post.image || '/placeholder-image.jpg'}
