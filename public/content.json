@@ -145,7 +145,7 @@
         "id": 13,
         "type": "project",
         "title": "Dualsense-ALOHA: Controller Teleoperation for RL Training",
-        "date": "2025-1-15",
+        "date": "2025-01-15",
         "description": "Dualsense Controller Teleoperation and ACT autonomy on ALOHA for Bigym benchmark tasks. This project integrates the DualSense controller with ALOHA teleoperation system to collect demonstration data for training reinforcement learning models in bimanual robotic manipulation tasks.",
         "urls": {
           "GitHub": "https://github.com/wayne-xyz/Dualsense-ALOHA",
