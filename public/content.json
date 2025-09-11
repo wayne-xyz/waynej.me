@@ -101,7 +101,9 @@
         "urls": {
           "GitHub": "https://github.com/wayne-xyz/MIRA"
         },
-        "image": "/9.png",
+        "project_source": {
+          "images": ["/9.png"]
+        },
         "gif": "https://github.com/wayne-xyz/MIRA/raw/main/ezgif-4-214148f4d7.gif"
       },
       {
@@ -144,12 +146,18 @@
       {
         "id": 13,
         "type": "project",
-        "title": "Dualsense-ALOHA: Controller Teleoperation for RL Training",
+        "title": "Dualsense-ALOHA: Controller Teleoperation for ACT IL Training",
         "date": "2025-01-15",
-        "description": "Dualsense Controller Teleoperation and ACT autonomy on ALOHA for Bigym benchmark tasks. This project integrates the DualSense controller with ALOHA teleoperation system to collect demonstration data for training reinforcement learning models in bimanual robotic manipulation tasks.",
+        "description": "Dualsense Controller Teleoperation and ACT IL Policy on ALOHA for one bigym task.  Implemented a multi-buffer inference system for improved movement stability, and applied an inference result scaler to address action attenuation—ensuring that the movement amplitude was sufficient to avoid object penetration in this scenario 100% avoided.  Integrated MuJoCo Warp in headless mode, achieving a 10x increase in step speed.",
         "urls": {
           "GitHub": "https://github.com/wayne-xyz/Dualsense-ALOHA",
-          "YouTube": "https://www.youtube.com/watch?v=-k_KTURPvFg&ab_channel=WayneJ."
+          "Medium":"https://medium.com/@wayenj/dualsense-aloha-teleop-act-il-bigym-task-mujoco-warp-9e55618d49cd"
+        },
+        "project_source": {
+          "videos": [
+            "https://youtu.be/raQO3rFsJ_M",
+            "https://youtu.be/h5bq8Rki2ko"
+          ]
         },
         "gif": "https://github.com/wayne-xyz/Dualsense-ALOHA/raw/master/controllers/demo/closerdishwasher2.gif"
       }

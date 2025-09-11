@@ -7,16 +7,19 @@ import { usePost } from '@/hooks/usePost';
 import { devLog } from '@/utils/devLogger';
 
 export default function PostPage({ params }) {
-  console.log('PostPage rendered with id:', params.id);
   const router = useRouter();
-  const { id } = params;
   const { selectedPost, isModalOpen, isLoading, error, openPost, closePost } = usePost();
-
+  
   useEffect(() => {
-    if (id) {
-      openPost(id);
+    async function loadParams() {
+      const { id } = await params;
+      console.log('PostPage rendered with id:', id);
+      if (id) {
+        openPost(id);
+      }
     }
-  }, [id, openPost]);
+    loadParams();
+  }, [params, openPost]);
 
   const handleClose = () => {
     closePost();
