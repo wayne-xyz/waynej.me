@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge"
 export function ContentCard({ post, onClick }) {
   return (
     <Card 
-      className="overflow-hidden relative w-full h-48 sm:h-56 md:h-64 cursor-pointer group transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20 dark:hover:shadow-blue-400/20 hover:-translate-y-2"
+      className="overflow-hidden relative w-full h-48 sm:h-56 md:h-64 cursor-pointer group transition-all duration-300 ease-in-out hover:shadow-2xl hover:shadow-blue-500/20 dark:hover:shadow-blue-400/20"
       onClick={() => onClick(post.id)}
     >
       {post.gif ? (
@@ -13,7 +13,7 @@ export function ContentCard({ post, onClick }) {
           <img
             src={post.gif}
             alt={post.title}
-            className="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+            className="w-full h-full object-contain"
           />
         </div>
       ) : (
@@ -21,12 +21,12 @@ export function ContentCard({ post, onClick }) {
           src={post.image || '/placeholder-image.jpg'}
           alt={post.title}
           layout="fill"
-          objectFit="cover"
-          className="transition-transform duration-300 ease-in-out group-hover:scale-110"
+          objectFit="contain"
+          className=""
         />
       )}
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent group-hover:from-black/40 transition-all duration-300" />
-      <div className="relative z-10 flex flex-col h-full justify-end p-3 sm:p-4 transform transition-transform duration-300 group-hover:translate-y-0">
+      <div className="relative z-10 flex flex-col h-full justify-end p-3 sm:p-4">
         <CardHeader className="p-0 mb-2">
           <CardTitle className="text-white group-hover:text-blue-100 transition-colors duration-300 text-sm sm:text-base md:text-lg leading-tight line-clamp-2">
             {post.title}

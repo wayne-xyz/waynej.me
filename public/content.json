@@ -160,7 +160,22 @@
           ]
         },
         "gif": "/13.gif"
+      },
+      {
+        "id": 14,
+        "type": "publication",
+        "title": "Playsense-ID: Haptic-Enhanced Multimodal Biometric Authentication for Gaming Controller Users",
+        "date": "2025-05-01",
+        "description": "A method based on linear resonant actuator from dualsense controller, with human handing posture, and LSTM molde, gains the biometics features. Achieved an accuracy of 98.5% and reducing Equal Error Rate (EER) to 0.4%. Robustness and generalization tests, conducted under varying environmental conditions and background noise scenarios",
+        "urls": {
+          "GitHub": "https://github.com/wayne-xyz/Playsense-ID",
+          "Paper":"https://scholar.smu.edu/engineering_compsci_etds/49/"
+        },
+        "image": "/14.png"
       }
+      
+
+
         
     ]
   }

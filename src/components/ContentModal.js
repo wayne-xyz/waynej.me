@@ -82,7 +82,7 @@ export function ContentModal({ isOpen, onClose, post }) {
                 <img
                   src={post.gif}
                   alt={`${post.title} demo`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
             ) : (
@@ -90,7 +90,7 @@ export function ContentModal({ isOpen, onClose, post }) {
                 src={post.image || '/placeholder-image.jpg'}
                 alt={post.title}
                 layout="fill"
-                objectFit="cover"
+                objectFit="contain"
               />
             )}
           </div>
@@ -124,7 +124,7 @@ export function ContentModal({ isOpen, onClose, post }) {
                             src={imageSrc}
                             alt={`${post.title} image ${index + 1}`}
                             layout="fill"
-                            objectFit="cover"
+                            objectFit="contain"
                             className="rounded-lg"
                           />
                         </div>
@@ -151,7 +151,7 @@ export function ContentModal({ isOpen, onClose, post }) {
                                   src={thumbnailUrl}
                                   alt={`${post.title} video ${index + 1}`}
                                   layout="fill"
-                                  objectFit="cover"
+                                  objectFit="contain"
                                   className="rounded-lg group-hover:scale-105 transition-transform duration-300"
                                 />
                               ) : (
@@ -185,7 +185,7 @@ export function ContentModal({ isOpen, onClose, post }) {
                     src={post.image}
                     alt={`${post.title} image`}
                     layout="fill"
-                    objectFit="cover"
+                    objectFit="contain"
                     className="rounded-lg"
                   />
                 </div>
