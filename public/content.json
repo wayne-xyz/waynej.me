@@ -173,10 +173,18 @@
           "Paper":"https://scholar.smu.edu/engineering_compsci_etds/49/"
         },
         "image": "/14.png"
+      },
+      {
+        "id": 15,
+        "type": "blog",
+        "title": "IK Solver for Xlerobot in Isaac Sim",
+        "date": "2025-10-01",
+        "description": "A technical walkthrough of implementing an inverse kinematics (IK) solver for the Xlerobot platform in NVIDIA Isaac Sim. Covers the process of integrating custom robot URDFs, setting up the simulation environment, and developing a Python-based IK solution for precise end-effector control. Includes practical insights, code snippets, and troubleshooting tips for robotics researchers and developers working with Isaac Sim.",
+        "urls": {
+          "Blog": "https://wayne-xyz.github.io/robot/2025/10/01/IK-Solver-For-Xlerobot-in-Issac-Sim.html"
+        },
+        "image": "/15.gif"
       }
       
-
-
-        
     ]
   }
