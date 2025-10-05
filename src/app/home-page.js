@@ -14,7 +14,6 @@ import { Button } from "@/components/ui/button"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
 import { ContentCard } from "@/components/ContentCard"
-import { ProductCard } from "@/components/ProductCard"
 import { ContentModal } from "@/components/ContentModal"
 import { ProfileNavigation } from "@/components/ProfileNavigation"
 import { loadPostDetails } from "@/utils/postLoader"
@@ -67,30 +66,22 @@ const HomePage = () => {
     return <div>No data found or invalid data format</div>
   }
 
-  // Separate products from other content
-  const productPosts = content.posts.filter(post => post.type === 'Product')
-  const otherPosts = content.posts.filter(post => post.type !== 'Product')
-  
-  // Filter other content (not products) based on selected types
-  const filteredOtherContent = selectedTypes.length > 0
-    ? otherPosts.filter(post => selectedTypes.includes(post.type))
-    : otherPosts
+  // Filter content based on selected types
+  const filteredContent = selectedTypes.length > 0
+    ? content.posts.filter(post => selectedTypes.includes(post.type))
+    : content.posts
 
-  // Sort both sections by date
-  const sortedProducts = [...productPosts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-  const sortedOtherContent = [...filteredOtherContent].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+  // Sort by date
+  const sortedContent = [...filteredContent].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 
   const toggleType = (type) => {
-    // Don't allow Product type to be toggled with others since it has its own section
-    if (type === 'Product') return;
-    
     setSelectedTypes(prev =>
       prev.includes(type) ? prev.filter(t => t !== type) : [...prev, type]
     )
   }
 
-  // Get unique types excluding 'Product' since it has its own section
-  const uniqueTypes = Array.from(new Set(otherPosts.map(post => post.type)))
+  // Get all unique types including 'Product'
+  const uniqueTypes = Array.from(new Set(content.posts.map(post => post.type)))
 
   const handlePostClick = async (id) => {
     devLog('Clicked post with id:', id);
@@ -127,76 +118,69 @@ const HomePage = () => {
   return (
     <div className="container mx-auto p-4 space-y-8">
       <ProfileNavigation profile={profile} />
-      <header className="flex flex-col items-center space-y-4 text-center">
-        <Avatar className="w-32 h-32 shadow-lg border-4 border-white dark:border-gray-800">
-          <AvatarImage src={profile.avatar} alt={profile.Name} />
-          <AvatarFallback>{profile.Name.charAt(0)}</AvatarFallback>
-        </Avatar>
-        <h1 className="text-3xl font-bold">{profile.Name}</h1>
-        <p className="text-xl text-muted-foreground max-w-4xl">
-          {profile.Description}
-        </p>
-        <div className="flex space-x-4">
-          {profile.Github && (
-            <Link href={profile.Github}>
-              <Button variant="ghost" size="icon">
-                <Github className="h-5 w-5" />
-                <span className="sr-only">GitHub</span>
-              </Button>
-            </Link>
-          )}
-          {profile.LinkedIn && (
-            <Link href={profile.LinkedIn}>
-              <Button variant="ghost" size="icon">
-                <Linkedin className="h-5 w-5" />
-                <span className="sr-only">LinkedIn</span>
-              </Button>
-            </Link>
-          )}
-          {profile.Youtube && (
-            <Link href={profile.Youtube}>
-              <Button variant="ghost" size="icon">
-                <Youtube className="h-5 w-5" />
-                <span className="sr-only">YouTube</span>
-              </Button>
-            </Link>
-          )}
-          {profile.Blog && (
-            <Link href={profile.Blog}>
-              <Button variant="ghost" size="icon">
-                <BookOpen className="h-5 w-5" />
-                <span className="sr-only">Blog</span>
-              </Button>
-            </Link>
-          )}
-          {profile.Email && (
-            <Link href={`mailto:${profile.Email}`}>
-              <Button variant="ghost" size="icon">
-                <Mail className="h-5 w-5" />
-                <span className="sr-only">Email</span>
-              </Button>
-            </Link>
-          )}
-        </div>
-      </header>
+      <header className="w-full flex justify-center">
+        <div className="flex flex-col md:flex-row gap-8 items-center max-w-4xl">
+          {/* Left side - Avatar */}
+          <div className="flex-shrink-0">
+            <Avatar className="w-32 h-32 md:w-40 md:h-40 shadow-lg border-4 border-white dark:border-gray-800">
+              <AvatarImage src={profile.avatar} alt={profile.Name} />
+              <AvatarFallback>{profile.Name.charAt(0)}</AvatarFallback>
+            </Avatar>
+          </div>
 
-      {/* Products Section */}
-      {sortedProducts.length > 0 && (
-        <div className="mx-auto" style={{ width: '70%' }}>
-          <div className="space-y-4">
-            <div className="flex items-center justify-between">
-              <h2 className="text-2xl font-bold">Products</h2>
-            </div>
-            <div className="space-y-6">
-              {sortedProducts.map(post => (
-                <ProductCard key={post.id} post={post} onClick={handlePostClick} />
-              ))}
+          {/* Right side - Info and Links */}
+          <div className="space-y-4 text-center md:text-left">
+            <h1 className="text-3xl font-bold">{profile.Name}</h1>
+            <p className="text-xl text-muted-foreground">
+              {profile.Description}
+            </p>
+            <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+              {profile.Github && (
+                <Link href={profile.Github}>
+                  <Button variant="ghost" size="icon">
+                    <Github className="h-5 w-5" />
+                    <span className="sr-only">GitHub</span>
+                  </Button>
+                </Link>
+              )}
+              {profile.LinkedIn && (
+                <Link href={profile.LinkedIn}>
+                  <Button variant="ghost" size="icon">
+                    <Linkedin className="h-5 w-5" />
+                    <span className="sr-only">LinkedIn</span>
+                  </Button>
+                </Link>
+              )}
+              {profile.Youtube && (
+                <Link href={profile.Youtube}>
+                  <Button variant="ghost" size="icon">
+                    <Youtube className="h-5 w-5" />
+                    <span className="sr-only">YouTube</span>
+                  </Button>
+                </Link>
+              )}
+              {profile.Blog && (
+                <Link href={profile.Blog}>
+                  <Button variant="ghost" size="icon">
+                    <BookOpen className="h-5 w-5" />
+                    <span className="sr-only">Blog</span>
+                  </Button>
+                </Link>
+              )}
+              {profile.Email && (
+                <Link href={`mailto:${profile.Email}`}>
+                  <Button variant="ghost" size="icon">
+                    <Mail className="h-5 w-5" />
+                    <span className="sr-only">Email</span>
+                  </Button>
+                </Link>
+              )}
             </div>
           </div>
         </div>
-      )}
+      </header>
 
-      {/* Other Content Section */}
+      {/* Content Section */}
       <div className="mx-auto" style={{ width: '70%' }}>
         <div className="space-y-4">
           <div className="flex justify-between items-center">
@@ -218,7 +202,7 @@ const HomePage = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            {sortedOtherContent.map(post => (
+            {sortedContent.map(post => (
               <ContentCard key={post.id} post={post} onClick={handlePostClick} />
             ))}
           </div>
